@@ -11,3 +11,5 @@ def main():
             update_rank(name, rank, division, ids)
         elif option == "4":
             display_roster(name, rank, division, ids)
+        elif option == "5":
+            search_member(name, rank, division, ids)
