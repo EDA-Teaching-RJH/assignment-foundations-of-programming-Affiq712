@@ -3,3 +3,10 @@ def main():
     while True:
         display_menu()
         option = input("Select an option: ")
+        if option == "1":
+            add_member(name, rank, divsion, ids)
+        elif option == "2":
+            remove_member(name, rank, division, ids)
+        elif option == "3":
+            update_rank(name, rank, division, ids)
+        elif option 
