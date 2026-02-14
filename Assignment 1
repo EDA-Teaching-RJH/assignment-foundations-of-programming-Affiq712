@@ -1,0 +1,62 @@
+def main():
+    names, ranks, divisions, ids = init_database()
+    while True:
+        display_menu()
+        choice = input("Select an option: ").strip().lower()
+        if choice == "1":
+            names, ranks, divisions, ids = add_member(names, ranks, divisions, ids)
+        elif choice == "2":
+            names, ranks, divisions, ids = remove_member(names, ranks, divisions, ids)
+        elif choice in ("q", "quit", "exit"):
+            print("Goodbye.")
+            break
+        else:
+            print("Invalid choice.")
+
+def init_database():
+    names = ["Worf", "Jean-luc Picard", "William Riker", "Deanna Troi"]
+    ranks = ["Lieutenant", "Captain", "Commander", "Lieutenant"]
+    divisions = ["Security", "Command", "Operations", "Counselor"]
+    ids = [1, 2, 3, 4]
+    return names, ranks, divisions, ids
+
+def display_menu():
+    print("\nWelcome to the roster manager. Please select an option:")
+    print("1. Add a member")
+    print("2. Remove a member")
+    print("q. Quit")
+
+def add_member(names, ranks, divisions, ids):
+    name = input("Name: ").strip()
+    rank = input("Rank: ").strip()
+    division = input("Division: ").strip()
+    new_id = max(ids) + 1 if ids else 1
+    names.append(name)
+    ranks.append(rank)
+    divisions.append(division)
+    ids.append(new_id)
+    print(f"Added {name} (ID {new_id}).")
+    return names, ranks, divisions, ids
+
+def remove_member(names, ranks, divisions, ids):
+    try:
+        id_to_remove = int(input("Enter ID to remove: ").strip())
+    except ValueError:
+        print("Invalid ID.")
+        return names, ranks, divisions, ids
+    if id_to_remove in ids:
+        idx = ids.index(id_to_remove)
+        removed = names.pop(idx)
+        ranks.pop(idx)
+        divisions.pop(idx)
+        ids.pop(idx)
+        print(f"Removed {removed}.")
+    else:
+        print("ID not found.")
+    return names, ranks, divisions, ids
+
+if __name__ == "__main__":
+    main()
+
+
+

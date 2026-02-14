@@ -1,0 +1,23 @@
+def main():
+    names, ranks, division, ids = init_database()
+    while True:
+        display_menu()
+        choice = input("Select an option:").strip().lower()
+        if choice == "1":
+            names, ranks, divsion, ids = add_member(names, ranks, divsion, ids)
+        elif choice == "2":
+            names, ranks, divsion, ids = delete_member(names, ranks, divsion, ids)
+        elif choice in ("terminate", "exit"):
+            print("Goodbye.")
+            break
+        else:
+            print("Invalid choice.")
+
+    def init_database():
+        n = ["William Riker", "Deanna Troi", "Worf", "Jean-luc Picard"]
+        r = ["Captain", "Commander", "Lieutenant", "Commander"]
+        d = ["Operations", "Command", "Counselor", "Security"]
+
+        i = [1, 2, 3, 4]
+        return n, r, d , i
+
