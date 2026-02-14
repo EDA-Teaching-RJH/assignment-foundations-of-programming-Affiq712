@@ -14,4 +14,26 @@ def main():
         elif option == "5":
             search_member(name, rank, division, ids)
         elif option == "6":
-            filter_by division(name, rank, division, ids)
+            filter_by_division(name, rank, division, ids)
+        elif option == "7":
+            calculate_payroll(name, rank, division, ids)
+        elif option == "8":
+            count_officers(name, rank, division, ids)
+        elif option == "9":
+            print("Exiting the program. Have a great day!")
+            break
+        else:
+            print("Invalid option. Please try again.")
+        
+
+        def display_menu():
+            print("\n--- Fleet Management System ---")
+            print("1. Add Member")
+            print("2. Remove Member")
+            print("3. Update Rank")
+            print("4. Display Roster")
+            print("5. Search Member")
+            print("6. Filter by Division")
+            print("7. Calculate Payroll")
+            print("8. Count Officers")
+            print("9. Exit")
