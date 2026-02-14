@@ -25,12 +25,11 @@ def main():
         else:
             print("Invalid option. Please try again.")
 
-        def int_database():
-            name = ()
+        
         
 
         def display_menu():
-            print("\n--- Fleet Management System ---")
+            print(" Welcome to the Fleet Managment System")
             print("1. Add Member")
             print("2. Remove Member")
             print("3. Update Rank")
@@ -47,3 +46,17 @@ def main():
             division = ("Operations", "Science", "Command", "Engineering", "Medical")
             ids = [1001, 1002, 1003, 1004, 1005]
             return name, rank, division, ids
+        
+        def add_member(name, rank, division, ids):
+            new_name = input("Enter the name of new member: ")
+            new_rank = input("Enter the rank of new member: ")
+            new_division = input("Enter the division of the new member: ")
+            new_id = int(input("Enter the ID of the new member: "))
+            name.append(new_name)
+            rank.append(new_rank)
+            division.append(new_division)
+            ids.append(new_id)
+            print(f"{new_name} has been added to the fleet ")
+            
+        
+            
