@@ -9,4 +9,5 @@ def main():
             remove_member(name, rank, division, ids)
         elif option == "3":
             update_rank(name, rank, division, ids)
-        elif option 
+        elif option == "4":
+            display_roster(name, rank, division, ids)
