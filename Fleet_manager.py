@@ -13,3 +13,5 @@ def main():
             display_roster(name, rank, division, ids)
         elif option == "5":
             search_member(name, rank, division, ids)
+        elif option == "6":
+            filter_by division(name, rank, division, ids)
