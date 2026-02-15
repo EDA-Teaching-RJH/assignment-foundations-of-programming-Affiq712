@@ -17,4 +17,14 @@ def main():
             display_roster(name, rank, division, ids)
         elif option == "5":
             search_crew(name, rank, division, ids)
+        elif option == "6":
+            filter_by_division(name, division)
+        elif option == "7":
+            calculate_payroll(ranks)
+        elif option == "8":
+            count_officers(rank)
+
+        
+
+
 
