@@ -32,7 +32,15 @@ def main():
             division = ["Command", "Operations", "science", "Engineering", "Security"]
             ids = [1, 2, 3, 4, 5]
             return name, rank, division, ids
-        
+        def display_menu():
+            print("Welcome to fleet management system")
+            print("1. Add a crew member")
+            print("2. Remove a crew member")
+            print("3. update rank of crew member")
+            print("4. Display roster")
+            print("5. Search for crew member")
+            print("6. Filter division")
+            print("7. Calculate payroll")
         
 
         
