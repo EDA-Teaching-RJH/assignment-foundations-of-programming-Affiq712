@@ -82,7 +82,16 @@ def main():
             else:
                 print("Member not found. Please try again.")
         
-        def filter_by_division(name, division)
+        def filter_by_division(name, division):
+            name = input("Enter name of member to filter by divisions: ")
+            division = input("Enter division (command, operations, science, engineering, security):")
+            print("name", "division")
+            for i in range(len(name)):
+                if division[i] == division:
+                    print(name[i], division[i])
+
+        def calculate_payroll(rank):
+            
             
             
             ")
