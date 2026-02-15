@@ -53,8 +53,13 @@ def main():
             ids_append = ids.append(new_ids)
 
             def remove_member(name, rank, division, ids):
-                remove_name = 
-                remove
+                remove_name = input("Enter name of member to remove: ")
+                remove_from_rank = rank.popindex(name.index(remove_name))
+                remove_from_division = division.popindex(name.index(remove_name))
+                remove_ids = ids.popindex(name.index(remove_name))
+
+                def update_rank(name, rank, ids):
+                
 
 
 
