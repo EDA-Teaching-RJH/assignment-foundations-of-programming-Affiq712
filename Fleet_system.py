@@ -19,3 +19,8 @@ elif choice == "6":
     filter_by_division(name, rank, division, ids)
 elif choice =="7":
     calculate_payroll()
+elif choice =="8":
+    count_officers(name, rank, division, ids)
+else: 
+    print("Invalid option. Please try again.")
+
