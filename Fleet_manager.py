@@ -43,7 +43,22 @@ def main():
             print("7. Calculate payroll")
             print("8. Count officers by rank")
         def add_member(name, rank, division, ids):
-            
+            new_name = input("Enter the name of the new member: ")
+            new_rank = input("Enter rank of new member: ")
+            new_division = input("Enter division of new member: ")
+            new_ids = (input("Enter ID of the new member: "))
+            name_append = name.append(new_name)
+            rank_append = rank.append(new_rank)
+            division_append = division.append(new_division)
+            ids_append = ids.append(new_ids)
+
+            def remove_member(name, rank, division, ids):
+                remove_name = 
+                remove
+
+
+
+
         
 
         
