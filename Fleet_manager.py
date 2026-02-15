@@ -52,13 +52,22 @@ def main():
             division_append = division.append(new_division)
             ids_append = ids.append(new_ids)
 
-            def remove_member(name, rank, division, ids):
-                remove_name = input("Enter name of member to remove: ")
-                remove_from_rank = rank.popindex(name.index(remove_name))
-                remove_from_division = division.popindex(name.index(remove_name))
-                remove_ids = ids.popindex(name.index(remove_name))
+        def remove_member(name, rank, division, ids):
+            remove_name = input("Enter name of member to remove: ")
+            remove_from_rank = rank.popindex(name.index(remove_name))
+            remove_from_division = division.popindex(name.index(remove_name))
+            remove_ids = ids.popindex(name.index(remove_name))
 
-                def update_rank(name, rank, ids):
+        def update_rank(name, rank, ids):
+            update_name = input("Enter new name of member to update rank:")
+            update_rank = input("Enter new rank of member:")
+            update_ids  = int(input("Enter ID of member: "))
+            name_index = name.index(update_name)
+            rank(name_index) = update_rank
+            ids(name_index) = update_ids
+        
+        def display_roster(name, rank, division, ids):
+
                 
 
 
