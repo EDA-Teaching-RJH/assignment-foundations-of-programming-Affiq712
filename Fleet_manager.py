@@ -13,3 +13,5 @@ def main():
         elif option == "3":
             update_rank(name, rank, division, ids)
             print("Rank has been successfully updated.")
+        elif option == "4":
+            display_roster(name, rank, division, ids)
