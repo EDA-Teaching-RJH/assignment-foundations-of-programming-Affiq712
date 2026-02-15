@@ -27,7 +27,13 @@ def main():
             print("Option not valid. Please try again. ")
 
         def int_database():
-            name = ["William Riker", ""]
+            name = ["William Riker", "Deanna Troi", "Data", "Spock", "Paul chekov"]
+            rank = ["Commander", "Lieutenant Commander", "Captain", "captain", "lieutenant"]
+            division = ["Command", "Operations", "science", "Engineering", "Security"]
+            ids = [1, 2, 3, 4, 5]
+            return name, rank, division, ids
+        
+        
 
         
 
