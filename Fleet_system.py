@@ -1,3 +1,3 @@
 def main():
     int_database()
-    dis
+    display_menu()
