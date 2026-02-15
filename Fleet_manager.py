@@ -67,6 +67,19 @@ def main():
             ids(name_index) = update_ids
         
         def display_roster(name, rank, division, ids):
+            print("name", "rank", "division", "ids")
+            for i in range(len(name)): 
+                print(name[i], rank[i], division[i], ids[i])
+
+        def search_crew(name, rank, division, ids):
+            search = input("Enter name of member to search: ")
+            if search in name:
+                index 
+
+
+        
+
+
 
                 
 
