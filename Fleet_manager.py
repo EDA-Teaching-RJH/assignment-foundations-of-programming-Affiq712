@@ -23,6 +23,11 @@ def main():
             calculate_payroll(ranks)
         elif option == "8":
             count_officers(rank)
+        else:
+            print("Option not valid. Please try again. ")
+
+        def int_database():
+            name = ["William Riker", ""]
 
         
 
