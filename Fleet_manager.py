@@ -11,7 +11,7 @@ def main():
             print("Exiting the fleet, have a great day!")
             break
         elif option == "3":
-            update_rank(name, rank, division, ids)
+            update_rank(name, rank , ids)
             print("Rank has been successfully updated.")
         elif option == "4":
             display_roster(name, rank, division, ids)
@@ -20,7 +20,7 @@ def main():
         elif option == "6":
             filter_by_division(name, division)
         elif option == "7":
-            calculate_payroll(ranks)
+            calculate_payroll(rank)
         elif option == "8":
             count_officers(rank)
         else:
@@ -41,6 +41,9 @@ def main():
             print("5. Search for crew member")
             print("6. Filter division")
             print("7. Calculate payroll")
+            print("8. Count officers by rank")
+        def add_member(name, rank, division, ids):
+            
         
 
         
