@@ -15,3 +15,6 @@ def main():
             print("Rank has been successfully updated.")
         elif option == "4":
             display_roster(name, rank, division, ids)
+        elif option == "5":
+            search_crew(name, rank, division, ids)
+
