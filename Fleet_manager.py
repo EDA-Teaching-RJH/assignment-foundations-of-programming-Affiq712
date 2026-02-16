@@ -19,14 +19,15 @@ def add_member(name, rank, division, ids):
             new_rank = input("Enter rank of new member: ")
             new_division = input("Enter division of new member: ")
             new_ids = (input("Enter ID of the new member: "))
-            name_append = name.append(new_name)
-            rank_append = rank.append(new_rank)
-            division_append = division.append(new_division)
-            ids_append = ids.append(new_ids)
+
+            name.append(new_name)
+            rank.append(new_rank)
+            division.append(new_division)
+            ids.append(new_ids)
 
 def remove_member(name, rank, division, ids):
             remove_name = input("Enter name of member to remove: ")
-            if remove_member in name:
+            if remove_name in name:
                    index = name.index(remove_name)
                    name.pop(index)
                    rank.pop(index)
