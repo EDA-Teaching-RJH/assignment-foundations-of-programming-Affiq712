@@ -52,8 +52,7 @@ def run_system_monolith():
             r.pop(idx)
             d.pop(idx)
             print("Removed.")
-        else:
-            print("unable to find crew member.")
+        
             
         elif opt == "4":
             print("Analyzing...")
@@ -93,3 +92,4 @@ def run_system_monolith():
             break 
             
         print("End of cycle.")
+run_system_monolith
