@@ -18,7 +18,7 @@ def add_member(name, rank, division, ids):
             new_name = input("Enter the name of the new member: ")
             new_rank = input("Enter rank of new member: ")
             new_division = input("Enter division of new member: ")
-            new_ids = (input("Enter ID of the new member: "))
+            new_ids = int(input("Enter ID of the new member: "))
 
             name.append(new_name)
             rank.append(new_rank)
@@ -38,12 +38,15 @@ def remove_member(name, rank, division, ids):
      
 
 def update_rank(name, rank, ids):
-            update_name = input("Enter new name of member to update rank:")
-            update_rank = input("Enter new rank of member:")
-            update_ids  = int(input("Enter ID of member: "))
-            name_index = name.index(update_name)
-            rank[name_index] = update_rank
-            ids[name_index] = update_ids
+        update_name = input("Enter new name of member to update rank:")
+        if update_name in name:
+            new_rank = input("Enter new rank of member:")
+            new_ids  = int(input("Enter ID of member: "))
+            index = name.index(update_name)
+            rank[index] = new_rank
+            ids[index] = new_ids
+        else:
+            print("Member not identified.")
         
 def display_roster(name, rank, division, ids):
             print("name", "rank", "division", "ids")
@@ -62,7 +65,7 @@ def search_crew(name, rank, division, ids):
                 print("Member not found. Please try again.")
         
 def filter_by_division(name, division):
-            name = input("Enter name of member to filter by divisions: ")
+            name = input("Enter name of member to filter by divisions(command, operations, science, engineering, secuirty) ")
             division = input("Enter division (command, operations, science, engineering, security):")
             print("name", "division")
             for i in range(len(name)):
@@ -102,7 +105,6 @@ def main():
         elif option == "2":
             remove_member(name, rank, division, ids)
             print("Exiting the fleet, have a great day!")
-            break
         elif option == "3":
             update_rank(name, rank , ids)
             print("Rank has been successfully updated.")
