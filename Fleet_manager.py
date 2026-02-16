@@ -54,10 +54,10 @@ def search_crew(name, rank, division, ids):
             search = input("Enter name of member to search: ")
             if search in name:
                 index = name.index
-                print("name:", name(index))
-                print("rank:", rank(index))
-                print("Division:", division(index))
-                print("ID:", ids(index))
+                print("name:", name[index])
+                print("rank:", rank[index])
+                print("Division:", division[index])
+                print("ID:", ids[index])
             else:
                 print("Member not found. Please try again.")
         
