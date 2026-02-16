@@ -14,6 +14,7 @@ def display_menu():
     print("6. Filter division")
     print("7. Calculate payroll")
     print("8. Count officers by rank")
+
 def add_member(name, rank, division, ids):
     new_name = input("Enter the name of the new member: ")
     new_rank = input("Enter rank of new member: ")
@@ -28,11 +29,11 @@ def add_member(name, rank, division, ids):
 def remove_member(name, rank, division, ids):
     remove_name = input("Enter name of member to remove: ")
     if remove_name in name:
-     index = name.index(remove_name)
-     name.pop(index)
-     rank.pop(index)
-     division.pop(index)
-     ids.pop(index)
+        index = name.index(remove_name)
+        name.pop(index)
+        rank.pop(index)
+        division.pop(index)
+        ids.pop(index)
     else:
      print("Member not identified. Please try again.")
      
@@ -85,7 +86,7 @@ def calculate_payroll(rank):
     else:
         print("rank not identified. Please try again.")
 
-def count_officers(rank_list):
+def count_officers(rank):
     rank = input("input rank to count the officers:")
     count = 0
     for i in range(len(rank)):
@@ -124,7 +125,7 @@ def main():
             
             
             
-
+main()
 
         
 

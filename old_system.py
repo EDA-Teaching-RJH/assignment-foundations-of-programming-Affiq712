@@ -14,7 +14,8 @@ def run_system_monolith():
     while loading < 5:
         print("Loading module " + str(loading))
         loading+=1
-        print("system loaded.")
+        print("System loaded.")
+        
         
     
     while True:
