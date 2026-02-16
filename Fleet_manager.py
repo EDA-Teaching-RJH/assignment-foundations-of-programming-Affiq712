@@ -66,7 +66,7 @@ def filter_by_division(name, division):
             division = input("Enter division (command, operations, science, engineering, security):")
             print("name", "division")
             for i in range(len(name)):
-                if division[i] == division:
+                if division[i].lower() == division.lower():
                     print(name[i], division[i])
 
 def calculate_payroll(rank):
@@ -88,7 +88,7 @@ def count_officers(rank):
                 for i in range(len(rank)):
                     if rank [i] == rank:
                         count += 1
-                print("There are", count, rank, "officers in fleet.")
+                print("There are", count, update_rank, "officers in fleet.")
 
             
 def main():
