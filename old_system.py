@@ -52,6 +52,8 @@ def run_system_monolith():
             r.pop(idx)
             d.pop(idx)
             print("Removed.")
+        else:
+            print("unable to find crew member.")
             
         elif opt == "4":
             print("Analyzing...")
