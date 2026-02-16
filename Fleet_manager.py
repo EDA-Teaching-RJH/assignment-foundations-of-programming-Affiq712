@@ -28,8 +28,8 @@ def main():
 
         def int_database():
             name = ["William Riker", "Deanna Troi", "Data", "Spock", "Paul chekov"]
-            rank = ["Commander", "Lieutenant Commander", "Captain", "captain", "lieutenant"]
-            division = ["Command", "Operations", "science", "Engineering", "Security"]
+            rank = ["Commander", "Lieutenant Commander", "captain", "Captain", "lieutenant"]
+            division = ["Command", "Operations", "science", "Engineering","Security"]
             ids = [1, 2, 3, 4, 5]
             return name, rank, division, ids
         def display_menu():
@@ -91,6 +91,24 @@ def main():
                     print(name[i], division[i])
 
         def calculate_payroll(rank):
+            rank = input("Enter rank to calculate payroll:")
+            if rank == "commander":
+                print("pay for commander is £100,000 ")
+            elif rank == "lieutenant commander":
+                print("pay for lieutenant commander is £90,000")
+            elif rank == "captain":
+                print("pay for captain is £80,000")
+            elif rank == "lieutenant":
+                print("pay for lieutenant is £60,000")
+            else:
+                print("rank not identified. Please try again.")
+
+            def count_officers(rank):
+                rank = input("input rank to count the officers:")
+                count = 0
+                for i in range(Len(rank)):
+                    if rank
+
             
             
             
