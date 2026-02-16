@@ -38,15 +38,15 @@ def remove_member(name, rank, division, ids):
      
 
 def update_rank(name, rank, ids):
-        update_name = input("Enter new name of member to update rank:")
-        if update_name in name:
-            new_rank = input("Enter new rank of member:")
-            new_ids  = int(input("Enter ID of member: "))
-            index = name.index(update_name)
-            rank[index] = new_rank
-            ids[index] = new_ids
-        else:
-            print("Member not identified.")
+    update_name = input("Enter new name of member to update rank:")
+    if update_name in name:
+        new_rank = input("Enter new rank of member:")
+        new_ids  = int(input("Enter ID of member: "))
+        index = name.index(update_name)
+        rank[index] = new_rank
+        ids[index] = new_ids
+    else:
+        print("Member not identified.")
         
 def display_roster(name, rank, division, ids):
             print("name", "rank", "division", "ids")
